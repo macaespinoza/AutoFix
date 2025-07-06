@@ -3,3 +3,23 @@
     font-size: 20px ;
     
 }
+
+.hero-bg {
+    display: flex;
+  align-items: center;
+    background-image: url('../img/hero01.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 400px;
+    
+}
+
+.hero-bg h1 {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
+    font-style: italic;
+    line-height: 0.9;
+    text-align: center;
+    
+}
