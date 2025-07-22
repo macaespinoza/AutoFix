@@ -32,10 +32,9 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
                     <a class="nav-link text-white me-3" aria-current="page" href="#">SERVICIOS</a>
-                    <a class="nav-link text-white me-3" href="#">SOLICITAR REPARACIÓN</a>
-                    <a class="nav-link text-white me-3" href="#">AGENDAR CITA</a>
+                    <a class="nav-link text-white me-3" href="#solicita-reparacion">SOLICITAR REPARACIÓN</a>
+                    <a class="nav-link text-white me-3" href="#agendar-cita">AGENDAR CITA</a>
                     <a class="nav-link text-white me-5" href="#">PAGOS</a>
-
                 </div>
             </div>
         </div>
@@ -100,7 +99,7 @@
     </section>
 
      <!-- Seccion Solicitar Reparación -->
-    <section class="py-5 bg-light">
+    <section class="py-5 bg-light" id="solicita-reparacion">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -133,6 +132,57 @@
             </div>
         </div>
     </section>
+
+    <!-- Seccion agendar cita -->
+     <section class="py-5 bg-light" id="agendar-cita">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="bg-white p-5 shadow rounded-4">
+                        <h2 class="text-center mb-4">Agendar Cita</h2>
+                        <form>
+                            <div class="mb-2">
+                                <label for="fecha-cita" class="form-label">Fecha:</label>
+                                <input type="date" name="fecha-cita" id="fecha-cita">
+                            </div>
+                            <div class="mb-2">
+                                <label for="hora-cita" class="form-label">Hora:</label>
+                                <select class="form-select" id="hora-cita">
+                                    <option selected disabled>Seleccione bloque horario para su cita</option>
+                                    <option value="1">10:00 - 10:30</option>
+                                    <option value="2">10:30 - 11:00</option>
+                                    <option value="3">11:00 - 11:30</option>
+                                    <option value="4">11:30 - 12:00</option>
+                                    <option value="5">12:00 - 12:30</option>
+                                    <option value="6">12:30 - 13:00</option>
+                                    <option value="7">15:00 - 15:30</option>
+                                    <option value="8">15:30 - 16:00</option>
+                                    <option value="9">16:00 - 16:30</option>
+                                    <option value="10">16:30 - 17:00</option>
+                                    <option value="11">17:00 - 17:30</option>
+                                    <option value="12">17:30 - 18:00</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="nombre-mecanico" class="form-label">Nombre Mecánico:</label>
+                                <select class="form-select" id="nombre-mecanico">
+                                    <option selected disabled>Nombre del Mecánico con quien desea agendar</option>
+                                    <option value="1">Federico Rosembaum</option>
+                                    <option value="2">Magdalena Rodriguez</option>
+                                    <option value="3">Juan Carlos Pezoa</option>
+                                    <option value="4">Guillermo Almendarez</option>
+                                </select>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary p-3 rounded-5">Agendar Cita</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
